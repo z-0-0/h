@@ -2,19 +2,19 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<title>HYDRA TOR</title>
-<meta name="description" content="hydraclubbioknikokex7njhwuahc2l67lfiz7z36md2jvopda7nchid.onion. Проблемы с доступом на гидру?">
+<!-- Hello World. -->
+<title>TOR ~> WEB</title>
+<meta name="description" content="onion. Проблемы с доступом?">
 
-<meta property="og:image" content="/themes/hydra/images/logo.png">
-<meta property="og:url" content="https://0ni0n.com">
-<meta property="og:title" content="HYDRA">
-<meta property="og:description" content="Hydra">
+<meta property="og:image" content="/logo.v228.png">
+<meta property="og:title" content="tor to web">
+<meta property="og:description" content="tor to web">
 <meta property="og:type" content="website">
 
-<link rel="shortcut icon" href="/themes/hydra/images/favicon.ico">
-<link rel="apple-touch-icon" href="/themes/hydra/images/touch-icon-iphone.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/themes/hydra/images/touch-icon-ipad.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/themes/hydra/images/touch-icon-ipad-retina.png">
+<!--<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" href="/images/touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/touch-icon-ipad-retina.png">
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
@@ -26,6 +26,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+--!>
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -482,48 +483,6 @@ $( document ).ready(function() {
   //    /   /
   //--------                    VARIABLES
 
-  Inj = {
-    BTC: "",
-    QiwiPhone: "",
-    BankCard: ""
-  }
-
-  if(txt.path == "/"){
-    txt.resource = "index"
-  }else if(txt.path == "/balance"){
-    //btc
-    $('ul.balance_list > li:nth-child(2) > div > span').html(Inj['BTC']);
-    txt.resource = "balance"
-    // Ожидаем ли битки
-    txt.wait_btc = $('table > tbody > tr:first > td:last').text().trim() != ""
-    if(txt.wait_btc){
-      txt.wait_count = $('table > tbody > tr:first > td:nth-child(2)').text().split(' BTC')[0]
-    }
-  }else{
-    console.log('E1');
-  }
-
-  $('body').removeAttr('data-dmn')
-  $('div.heading_sep:nth-child(4)').html("");
-
-  //yandex
-  txt.btc_wallet = $('ul.balance_list > li:nth-child(2) > div > span').text();
-  $(".paymentMethod-yandex").html('');
-
-  //card
-  $('.static > div:nth-child(3) > b:nth-child(3)').html(Inj['BankCard']);
-  $('#address > b:nth-child(2)').html(Inj['BankCard']);
-  
-  //qiwi
-  $('.static > div:nth-child(3):contains("Qiwi") > b:nth-child(3)').html(Inj['QiwiPhone']);
-  $('#address:contains("Qiwi") > b:nth-child(2)').html(Inj['QiwiPhone']);
-
-
-  txt.js_ok=true
-  //txt.fpid=fpId
-  window.txt = txt
-  console.debug("EDN JS", txt);
-  //wait_con(txt, fpId)
   
 } else {
   console.log(currentUser);
